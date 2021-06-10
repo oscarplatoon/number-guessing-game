@@ -9,3 +9,6 @@ h1 {
   font-weight: 400
 }
 
+#history {
+  list-style-type: none;
+}
