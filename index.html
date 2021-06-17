@@ -4,16 +4,37 @@
     <title>TITLE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Your link to your CSS file -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles.css">
     <!-- Your Javascript file goes here -->
-    <script src="" async defer></script>
+    <script src="app.js" async defer></script>
   </head>
   <body>
     <!-- your HTML should go here -->
     <nav>
       <h1>Let's Play the Guessing Number Game!</h1>
     </nav>
-
-
+    <div id='game-input'>
+      <input id='guess-input' placeholder="number 1-100">
+      <br />
+      <button onclick='guess()'>
+        Submit your Guess for Judgment...
+      </button>
+    </div>
+    <div id='game-state'>
+      <h2 id='guess reply'>
+        Your guess was incorrect.
+      </h2>
+      <h2 id='number-guesses'>
+        You have not begun the game.
+      </h2>
+    </div>
+    <div id='game-start'>
+      <button onclick='guessingGame()'>
+        <h2>
+          START THE GAME
+        </h2>
+      </button>
+    </div>
+    
   </body>
 </html>
