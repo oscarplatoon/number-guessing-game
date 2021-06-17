@@ -40,6 +40,7 @@ const addNumberToList = (number) => {
 
 pickRandomNumber();
 
+// --------- LOCAL STORAGE ------- //
 const doesUserExist = () => {
   if (localStorage.getItem('user-name')) {
     let userName = localStorage.getItem('user-name');
