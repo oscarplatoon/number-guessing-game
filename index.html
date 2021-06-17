@@ -1,7 +1,7 @@
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8">
-    <title>TITLE</title>
+    <title>The Guessing Game!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Your link to your CSS file -->
     <link rel="stylesheet" href="styles.css">
@@ -13,12 +13,25 @@
     <nav>
       <h1>Let's Play the Guessing Number Game!</h1>
     </nav>
+    <div id='game-message'>
+      Please guess a number between 1 and 100
+    </div>
     <div id='game-input'>
       <input id='guess-input' placeholder="number 1-100">
       <br />
-      <button onclick='guess()'>
+      <button id='submit-button' onclick='guess()'>
         Submit your Guess for Judgment...
       </button>
+    </div>
+    <div id='game-output'>
+      <h2 id='game-response'>
+        
+      </h2>
+    </div>
+    <div id='guess log'>
+      <ol id='guess-list'>
+
+      </ol>
     </div>
   </body>
 </html>
