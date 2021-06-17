@@ -42,3 +42,19 @@ const addGuessToList = (number) => {
   const numList = document.getElementById('guess-list')
   numList.appendChild(newElem)
 }
+
+document.getElementById('submit-username').onclick = () => {
+  let userName = document.getElementById('user-name').value
+  localStorage.setItem('user-name', userName)
+  return doesUserExist();
+}
+
+const doesUserExist = () => {
+  if (localStorage.getItem('user-name')) {
+    let userName = localStorage.getItem('user-name')
+    document.getElementById('welcome').innerHTML=`Welcome ${userName}!`
+    return document.getElementById('get-username').remove()
+  }
+}
+
+doesUserExist();

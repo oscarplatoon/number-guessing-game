@@ -11,8 +11,19 @@
   <body>
     <!-- your HTML should go here -->
     <nav>
-      <h1>Let's Play the Guessing Number Game!</h1>
+      <div>
+        <h1 id='welcome'>
+          Welcome!
+        </h1>
+        <div id='get-username'>
+          <input id='user-name' type='text' placeholder="Username">
+          <button id="submit-username"> 
+            Submit Username 
+          </button>
+        </div>
+      </div>
     </nav>
+    <h1>Let's Play the Guessing Number Game!</h1>
     <div id='game-message'>
       Please guess a number between 1 and 100
     </div>
@@ -25,7 +36,7 @@
     </div>
     <div id='game-output'>
       <h2 id='game-response'>
-        
+
       </h2>
     </div>
     <div id='guess log'>
