@@ -45,8 +45,13 @@ const addGuessToList = (number) => {
 
 document.getElementById('submit-username').onclick = () => {
   let userName = document.getElementById('user-name').value
-  localStorage.setItem('user-name', userName)
-  return doesUserExist();
+  if(userName.length > 0) {
+    localStorage.setItem('user-name', userName)
+    return doesUserExist();
+  }
+  else {
+    alert("Hey, You gotta enter your name!")
+  }
 }
 
 const doesUserExist = () => {
